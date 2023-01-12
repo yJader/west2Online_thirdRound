@@ -1,2 +1,4 @@
 /src/main/resources/jdbc.properties
 /src/main/resources/qWeather.properties
+/target/classes/jdbc.properties
+/target/classes/qWeather.properties
