@@ -167,4 +167,8 @@ public class City {
     public void setLon(Double lon) {
         this.lon = lon;
     }
+
+    public String showCity() {
+        return adm+location+" "+lon+"E,"+lat+"N";
+    }
 }

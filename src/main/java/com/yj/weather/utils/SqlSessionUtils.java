@@ -1,4 +1,4 @@
-package com.yj.weather.service;
+package com.yj.weather.utils;
 
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -19,7 +19,7 @@ public class SqlSessionUtils {
         try{
             InputStream is = Resources.getResourceAsStream("mybatis-config.xml");
             SqlSessionFactory factory = new SqlSessionFactoryBuilder().build(is);
-            sqlSession = factory.openSession(true);
+            sqlSession = factory.openSession(false); //自动提交事务
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
